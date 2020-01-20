@@ -21,3 +21,7 @@ jobs:
         tag: latest
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: docker --version
+      run: docker run --rm bradynpoulsen/docker-compose docker --version
+    - name: docker-compose --version
+      run: docker run --rm bradynpoulsen/docker-compose docker-compose --version
